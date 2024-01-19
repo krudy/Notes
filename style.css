@@ -1,7 +1,23 @@
+*{
+    box-sizing: border-box;
+}
+
 body {
     font-family: sans-serif, arial;
 }
 
 .note-area {
-    
+    width: 100%;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.add-btn {
+    border-style: none;
+    background-color: rgb(55, 145, 145);
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
 }
