@@ -3,28 +3,47 @@
 }
 
 body {
+    min-height: 100vh;
+    background: hwb(33 21% 0%);
+    background: linear-gradient(133deg, rgb(224, 118, 12) 0%, rgb(252, 228, 90) 100%);
+  }
 
-    background-image: url("img/background.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: sans-serif, arial;
+
+h1 {
+    font-family: "Rock 3D", system-ui;
+    color: white;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5rem;
+}
+
+.title {
+    font-weight: 900;
+    color: white;
+    text-align: center;
+}
+
+.strong-title {
+    color: purple;
 }
 
 .note-area {
+    background-color: hwb(33 33% 0%);
+    color: white;
     font-size: 2rem;
     width: 100%;
     margin: 20px 0;
-    margin-top: 17%;
+    margin-top: 2%;
     padding: 20px;
-    border-radius: 30px;
-    border: solid 5px rgb(113, 115, 9) ;
+    border-radius: 10px;
+    border: solid 5px  purple;
 }
 
 .add-btn {
     margin-left: 45%;
     border-radius: 10px !important;
     border-style: none;
-    background-color: rgb(113, 115, 9) ;
+    background-color: purple;
     color: white;
     text-transform: uppercase;
     font-size: 28px;
@@ -33,20 +52,46 @@ body {
     cursor: pointer;
 }
 
+.add-btn:hover {
+    background-color: blueviolet;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
 .delete-button {
     border-style: none;
     margin: 4px;
     margin-left: 30px;
     border-radius: 5px;
-    background-color: rgb(218, 26, 26);
+    background-color: purple;
     color: white;
     text-transform: uppercase;
     font-size: 16px;
     padding: 6px 14px;
-    cursor: pointer;
+    cursor: pointer;   
+}
+
+.delete-button:hover {
+    background-color: blueviolet;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .note {
     color: white;
     font-size: 2rem;
+}
+
+#fieldset-notes {
+    border-top: solid purple;
+    border-bottom: none;
+    border-left: solid purple;
+    border-right: none
+}
+
+#fieldset-new-note {
+    border: none;
+    width: 60%;
+    margin: 2% auto;
+    
 }

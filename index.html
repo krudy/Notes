@@ -5,13 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notes</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caprasimo&family=Concert+One&family=Lato:wght@400;700&family=Roboto+Mono:wght@700&family=Rock+3D&family=Rouge+Script&family=Solway:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    
 </head>
 <body>
-
-        
-        <textarea class="note-area"></textarea>
-        <button class="add-btn" onclick="saveNote()">Add Note</button>
-        <section class="notes">
+    <div class="title">
+        <h1>YOUR <strong class="strong-title">NOTES</strong> APP</h1>
+    </div>
+        <fieldset id="fieldset-new-note" >
+            <textarea class="note-area" placeholder="Enter a note here..."></textarea>
+            <button class="add-btn" onclick="saveNote()">Add Note</button>           
+        </fieldset>
+        <fieldset id="fieldset-notes">
+            <section class="notes">
+        </fieldset>
     
 
     </section>
